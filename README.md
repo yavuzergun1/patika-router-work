@@ -1,1 +1,1 @@
-Patika.dev React Router 5 anlatımında yapılanlar React Router 6'ya Uyarlandı
+Patika.dev React Router 5 anlatımı ile yapılan URL Parameters örneği React Router 6'ya Uyarlandı
