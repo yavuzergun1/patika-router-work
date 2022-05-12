@@ -7,14 +7,17 @@ import {
 import Home from "./Routes/Home";
 import About from "./Routes/About";
 import Users from "./Routes/Users";
+import App from "./App";
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<App />} >
+      <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="users" element={<Users />} />
+      </Route>
     </Routes>
   </BrowserRouter>,
   rootElement
