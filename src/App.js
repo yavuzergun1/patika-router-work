@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Home from "./Routes/Home";
 import About from "./Routes/About";
@@ -15,10 +15,36 @@ export default function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/"><h1>Bookkeeper</h1></Link> 
-        <Link to="/Home">Home</Link> |{" "}
-        <Link to="/About">About</Link> |{" "}
-        <Link to="/Users">Users</Link>
+        <NavLink         style={({isActive}) =>{
+          return {
+            display: "block",
+            margin: "1rem 0",
+            color: isActive ? "red" : "" };                    
+        }}
+        to="/"><h1>Bookkeeper</h1></NavLink> 
+        <NavLink         
+        style={({isActive}) =>{
+          return {
+            margin: "1rem 0",
+            color: isActive ? "red" : "" };                    
+        }}
+ to="/Home">Home</NavLink> |{" "}
+        <NavLink
+        style={({isActive}) =>{
+          return {
+            margin: "1rem 0",
+            color: isActive ? "red" : "" };                    
+        }}
+        
+        to="/About">About</NavLink> |{" "}
+        <NavLink
+        style={({isActive}) =>{
+          return {
+            margin: "1rem 0",
+            color: isActive ? "red" : "" };                    
+        }}
+        
+        to="/Users">Users</NavLink>
       </nav>
       <Outlet/>
     </div>

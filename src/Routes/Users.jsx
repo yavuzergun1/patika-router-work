@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import { useState, useEffect} from 'react'
 import axios from 'axios';
 
@@ -24,10 +24,18 @@ function Users() {
         <h1>Users</h1>
 <ul> 
         {isLoading && <div>Loading...</div>}
-        {users.map((user)=> <Link 
-        style={{ display: "block", margin: "1rem 0" }} 
+        {users.map((user)=> 
+        <NavLink 
+        style={({isActive}) =>{
+          return {
+            display: "block",
+            margin: "1rem 0",
+            color: isActive ? "red" : "" };                    
+        }}
+
         key={user.id} 
-        to={`/user/${user.id}`} >{user.name}</Link>  )}
+        to={`/user/${user.id}`} >{user.name}
+        </NavLink>  )}
 </ul> 
     </div>
 <Outlet/>
