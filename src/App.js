@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Home from "./Routes/Home";
 import About from "./Routes/About";
 import Users from "./Routes/Users";
+import User from "./Routes/User";
 
 export default function App() {
   return (

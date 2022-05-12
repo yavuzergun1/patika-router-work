@@ -4,10 +4,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import App from "./App";
 import Home from "./Routes/Home";
 import About from "./Routes/About";
 import Users from "./Routes/Users";
-import App from "./App";
 import User from "./Routes/User";
 // import Deneme from "./Routes/Deneme";
 
@@ -19,16 +19,16 @@ render(
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="users" element={<Users />} />
-      {/* <Route path="users" element={<Deneme />} /> */}
-      </Route>
       <Route path="user/:id" element={<User />} />
+      
       <Route path="*" 
       element={
-      <main style={{ padding: "10rem" }}>
+        <main style={{ padding: "10rem" }}>
           <p>There's nothing here!</p>
         </main>
       }
       />
+      </Route>
 
     </Routes>
   </BrowserRouter>,
