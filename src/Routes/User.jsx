@@ -21,7 +21,10 @@ useEffect(()=>{
     
   return (
     <div>
-      <h2>User Details</h2>
+    
+      <h2
+      style={{padding:'1rem 2rem'}}
+      >User Details</h2>
         <ul>
         {isLoading && <div>Loading...</div>}
            {!isLoading && <li> Name: {JSON.stringify(user.username)}</li>}
@@ -30,7 +33,11 @@ useEffect(()=>{
            {!isLoading && <li> Company: {JSON.stringify(user.company.name)}</li>}
             {/* Loading halindeyken boş obje göstermeyi engeller. (Loading yoksa objecti göster, varsa gösterme) */}
         </ul>
-        <Link to= {`/user/${parseInt(id) + 1}`}>Next User</Link>
+        <br />
+        <Link
+        style={{padding:'0 1rem'}}
+        to= {`/user/${parseInt(id) + 1}`}>Next User</Link>
+       
         {/* id string bir ifade olduğu için parseInt ile number'a çeviriyoruz. */}
          </div>
   );

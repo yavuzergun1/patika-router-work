@@ -19,8 +19,14 @@ function Users() {
     
 
   return (
-    <div>
-     <div> 
+    <div
+    style={{ display: "flex" }}>
+     <nav
+     style={{
+          borderRight: "solid 1px",
+          padding: "1rem",
+        }}
+     > 
         <h1>Users</h1>
 <ul> 
         {isLoading && <div>Loading...</div>}
@@ -37,7 +43,7 @@ function Users() {
         to={`/users/${user.id}`} >{user.name}
         </NavLink>  )}
 </ul> 
-    </div>
+    </nav>
 <Outlet/>
     </div>
   )
