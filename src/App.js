@@ -7,8 +7,6 @@ import Users from "./Routes/Users";
 export default function App() {
   return (
     <div>
-      
-
       <nav
         style={{
           borderBottom: "solid 1px",
