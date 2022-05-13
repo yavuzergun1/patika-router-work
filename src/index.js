@@ -18,9 +18,11 @@ render(
       <Route path="/" element={<App />} >
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="users" element={<Users />} />
-      <Route path="user/:id" element={<User />} />
+      <Route path="users" element={<Users />} >
+      <Route path=":id" element={<User />} />
+      </Route>
       
+      {/* Burada User'ı Route ile Users içine alarak alt component haline getiremedik. hata verdi */}
       <Route path="*" 
       element={
         <main style={{ padding: "10rem" }}>

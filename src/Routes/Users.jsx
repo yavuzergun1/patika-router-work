@@ -34,7 +34,7 @@ function Users() {
         }}
 
         key={user.id} 
-        to={`/user/${user.id}`} >{user.name}
+        to={`/users/${user.id}`} >{user.name}
         </NavLink>  )}
 </ul> 
     </div>
