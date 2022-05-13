@@ -1,5 +1,5 @@
 {
-  "homepage": "http://yavuzergun1.github.io/patika-router-work",
+  "homepage": "https://yavuzergun1.github.io/patika-router-work",
   "name": "patika-work",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "doploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
