@@ -36,7 +36,7 @@ useEffect(()=>{
         <br />
         <Link
         style={{padding:'0 1rem'}}
-        to= {`/user/${parseInt(id) + 1}`}>Next User</Link>
+        to= {`/users/${parseInt(id) + 1}`}>Next User</Link>
        
         {/* id string bir ifade olduğu için parseInt ile number'a çeviriyoruz. */}
          </div>
