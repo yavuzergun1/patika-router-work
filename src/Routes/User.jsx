@@ -21,10 +21,10 @@ useEffect(()=>{
     
   return (
     <div>
-    
       <h2
       style={{padding:'1rem 2rem'}}
       >User Details</h2>
+      <h4>You see {user.id}. user </h4>
         <ul>
         {isLoading && <div>Loading...</div>}
            {!isLoading && <li> Name: {JSON.stringify(user.username)}</li>}
@@ -34,6 +34,7 @@ useEffect(()=>{
             {/* Loading halindeyken boş obje göstermeyi engeller. (Loading yoksa objecti göster, varsa gösterme) */}
         </ul>
         <br />
+        
         <Link
         style={{padding:'0 1rem'}}
         to= {`/users/${parseInt(id) + 1}`}>Next User</Link>

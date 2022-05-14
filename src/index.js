@@ -21,8 +21,7 @@ render(
       <Route path="users" element={<Users />} >
       <Route path=":id" element={<User />} />
       </Route>
-      
-      {/* Burada User'ı Route ile Users içine alarak alt component haline getiremedik. hata verdi */}
+  
       <Route path="*" 
       element={
         <main style={{ padding: "10rem" }}>
