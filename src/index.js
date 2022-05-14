@@ -9,7 +9,7 @@ import Home from "./Routes/Home";
 import About from "./Routes/About";
 import Users from "./Routes/Users";
 import User from "./Routes/User";
-// import Deneme from "./Routes/Deneme";
+
 
 const rootElement = document.getElementById("root");
 render(
