@@ -7,7 +7,7 @@ function User() {
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   let {id} = useParams()
-  console.log(id);
+  // console.log(id);
 
   
 
