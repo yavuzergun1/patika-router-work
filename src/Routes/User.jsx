@@ -24,7 +24,7 @@ useEffect(()=>{
       <h2
       style={{padding:'1rem 2rem'}}
       >User Details</h2>
-      <h4>You see {user.id}. user </h4>
+      <h4 style={{padding:'0 2rem'}}> {user.id}. user </h4>
         <ul>
         {isLoading && <div>Loading...</div>}
            {!isLoading && <li> Name: {JSON.stringify(user.username)}</li>}

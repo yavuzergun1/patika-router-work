@@ -19,6 +19,14 @@ render(
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="users" element={<Users />} >
+      <Route
+        index
+        element={
+          <main style={{ padding: "5rem" }}>
+            <h2>Select an invoice</h2>
+          </main>
+        }
+      />
       <Route path=":id" element={<User />} />
       </Route>
   
