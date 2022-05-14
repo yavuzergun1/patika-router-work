@@ -23,7 +23,7 @@ render(
         index
         element={
           <main style={{ padding: "5rem" }}>
-            <h2>Select an invoice</h2>
+            <h2>Select a User</h2>
           </main>
         }
       />
