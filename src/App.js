@@ -15,7 +15,7 @@ export default function App() {
       >
         <NavLink style={({isActive}) =>{
           return {display: "block",margin: "1rem 0",color: isActive ? "red" : "" };}}
-          to="/"><h1>Bookkeeper</h1></NavLink> 
+          to="/"><h1>Users Database</h1></NavLink> 
         <NavLink style={({isActive}) =>{
           return {display: "inline",margin: "1rem 0",color: isActive ? "red" : "" };}} to="/Home">Home</NavLink> |{" "}
         <NavLink style={({isActive}) =>{
