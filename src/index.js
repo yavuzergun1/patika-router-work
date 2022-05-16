@@ -1,4 +1,6 @@
-import { render } from "react-dom";
+import { render } from '@testing-library/react';
+import reportWebVitals from './reportWebVitals';
+import ReactDOM  from 'react-dom/client';
 import {
   BrowserRouter,
   Routes,
@@ -11,7 +13,7 @@ import Users from "./Routes/Users";
 import User from "./Routes/User";
 
 
-const rootElement = document.getElementById("root");
+const root= ReactDOM.createRoot( document.getElementById('root'))
 render(
   <BrowserRouter>
     <Routes>
@@ -41,5 +43,7 @@ render(
 
     </Routes>
   </BrowserRouter>,
-  rootElement
+  
 );
+
+reportWebVitals();
